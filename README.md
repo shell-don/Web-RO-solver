@@ -59,3 +59,13 @@ sachant que nous devons produire au moins 50 tonnes, nous avons :
 ```math
 \sum_{i=1}^7 x_i \geq 50
 ```
+\
+Notons que nous ne supposons pas que nous produirons exactement 50 tonnes, puisqu’il peut être nécessaire de
+produire d’avantage afin de satisfaire les autres exigences du problème. \
+
+
+L’autre caractéristique contraignante dans ce problème que que l’acier doit contenir un certain pourcentage de
+carbone, de silicone, de sulfure et de phosphore. Afin de voir comment ces exigences de composition se traduisent en
+contraintes par rapport à nos variables, nous nous concentrerons d’abord sur l’exigence d’avoir entre 0.5% et 1.25% de carbone, en espérant que les exigences sur le silicone, le sulfure et le phosphore se formulent de manière similaire. \
+À partir des données, nous connaissons le pourcentage de contribution en carbone de chaque matière première, aussi
+nous pouvons facilement calculer la quantité de carbone pour n’importe quel choix de variables comme
