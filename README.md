@@ -27,7 +27,8 @@ nous pourrions assigner une variable diﬀérente pour représenter la quantiter
 — x5 = tonnes de silicone 1, \
 — x6 = tonnes de silicone 2, \
 — x7 = tonnes de charbon. \ 
-\
+
+
 Afin de modéliser les contraintes, observons tout d’abord que les variables dans ce cas sont naturellement bornées
 inférieurement par 0 (puisque des quantités négatives ne feraient pas de sens), et bornées supérieurement par leur
 quantité disponible, aussi avons-nous: 
@@ -52,4 +53,5 @@ quantité disponible, aussi avons-nous:
 ```math
 0 ≤x7 ≤25.
 ```
+
 En supposant que n’importe quelle quantité d’une matière première 
