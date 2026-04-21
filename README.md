@@ -74,7 +74,7 @@ nous pouvons facilement calculer la quantité de carbone pour n’importe quel c
 Cependant, comme nous avons une exigences de proportion de carbone dans l’acier, nous devons diviser cette quantité de carbone (tonnes) par la quantité d’acier (tonnes). \
 La contrainte que l’acier contienne entre 0.5% et 1.25% de carbone se traduit dans la paire de contraintes linéaire : 
 ```math
-0.5 \leq \frac{0.03x_1 + 0.025x_2 + 0.012x_4 + 0.9x_7}{x_1 +x_2 +x_3 +x_4 +x_5 +x_6 +x_7} \leq 1.25
+0.5 \leq \frac{3x_1 + 2.5x_2 + 1.2x_4 + 90x_7}{x_1 +x_2 +x_3 +x_4 +x_5 +x_6 +x_7} \leq 1.25
 ```
 \
 Puisque ce problème implique de trouver la combinaison la moins coûteuse de matières premières qui rencontre la demande de 50 tonnes d’acier, la fonction objectif est simplement le coût des matières premières utilisées: 
