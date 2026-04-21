@@ -84,3 +84,5 @@ Puisque ce problème implique de trouver la combinaison la moins coûteuse de ma
 ```math
 coût = 200x_1 + 250x_2 + 150x_3 + 220x_4 + 300x_5 + 310x_6 + 165x_7
 ```
+
+<img width="1186" height="878" alt="Capture d’écran 2026-04-21 à 11 13 38" src="https://github.com/user-attachments/assets/318b0666-8ee8-4941-be7d-3b18ba08cbd5" />
