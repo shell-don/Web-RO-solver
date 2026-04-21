@@ -64,8 +64,22 @@ Notons que nous ne supposons pas que nous produirons exactement 50 tonnes, puisq
 produire d’avantage afin de satisfaire les autres exigences du problème.
 
 
-L’autre caractéristique contraignante dans ce problème que que l’acier doit contenir un certain pourcentage de
+L’autre caractéristique contraignante dans ce problème est que l’acier doit contenir un certain pourcentage de
 carbone, de silicone, de sulfure et de phosphore. Afin de voir comment ces exigences de composition se traduisent en
 contraintes par rapport à nos variables, nous nous concentrerons d’abord sur l’exigence d’avoir entre 0.5% et 1.25% de carbone, en espérant que les exigences sur le silicone, le sulfure et le phosphore se formulent de manière similaire. \
 À partir des données, nous connaissons le pourcentage de contribution en carbone de chaque matière première, aussi
 nous pouvons facilement calculer la quantité de carbone pour n’importe quel choix de variables comme $0.03x_1 + 0.025x_2 + 0.012x_4 + 0.9x_7$.
+
+
+Cependant, comme nous avons une exigences de proportion de carbone dans l’acier, nous devons diviser cette quantité de carbone (tonnes) par la quantité d’acier (tonnes). \
+La contrainte que l’acier contienne entre 0.5% et 1.25% de carbone se traduit dans la paire de contraintes linéaire : 
+```math
+0.5 \leq \frac{0.03x_1 + 0.025x_2 + 0.012x_4 + 0.9x_7}{x_1 +x_2 +x_3 +x_4 +x_5 +x_6 +x_7} \leq 1.25
+```
+
+
+Puisque ce problème implique de trouver la combinaison la moins coûteuse de matières premières qui rencontre la demande de 50 tonnes d’acier, la fonction objectif est simplement le coût des matières premières utilisées: 
+
+```math
+coût \eq 200x_1 + 250x_2 + 150x_3 + 220x_4 + 300x_5 + 310x_6 + 165x_7
+```
