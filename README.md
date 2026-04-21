@@ -1,2 +1,18 @@
-# Web-RO-solver
-Page web permettant de résoudre des modèles d'optimisation de recherche opérationnelle modélisé par des systèmes sous contraintes linéaire. 
+### Un problème de mélange
+
+Un armateur doit construire un navire de guerre à partir de 50 tonnes
+d’acier contenant entre 0.5% et 1.25% de carbone (C), entre 0.3% and 0.5% de silicone (Si), pas plus de 0.05% de
+sulfure (Su), et pas plus de 0.04% de phosphore (Ph). Un fournisseur produit de l’acier à partir de sept matières
+premières dont les qualités, les disponibilités en tonnes, et les coûts en $/tonne sont donnés dans la Table. Le
+fournisseur veut déterminer la combinaison la moins coûteuse de composants bruts qu’il peut utiliser pour produire
+l’acier répondant aux besoins de l’armateur.
+
+| Matière première  | %C | %Si | %Su | %SPh | Stock | Coût |
+| ----------------- | -- | --- | --- | ---- | ----- |----- |
+| limonite | 3.0 | 0 | 0.013 | 0.015 | 40 | 200 |
+| taconite | 2.5 | 0 | 0.013 | 0.015 | 40 | 200 |
+| hématite | 3.0 | 0 | 0.013 | 0.015 | 40 | 200 |
+| magnétite | 3.0 | 0 | 0.013 | 0.015 | 40 | 200 |
+| silicone 1 | 3.0 | 0 | 0.013 | 0.015 | 40 | 200 |
+| silicone 2 | 3.0 | 0 | 0.013 | 0.015 | 40 | 200 |
+| charbon | 3.0 | 0 | 0.013 | 0.015 | 40 | 200 |
