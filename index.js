@@ -1,4 +1,4 @@
-import init, { gen_html_basique, gen_objective_constraints, resoudre_basique } from "./pkg/_lpweb.js"
+import init, { gen_html_basique, gen_objective_constraints, resoudre_basique } from "./_lpweb.js"
 
 function getElement(id) {
     return document.getElementById(id);
