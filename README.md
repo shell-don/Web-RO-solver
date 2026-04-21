@@ -77,6 +77,8 @@ La contrainte que l’acier contienne entre 0.5% et 1.25% de carbone se traduit 
 0.5 \leq \frac{3x_1 + 2.5x_2 + 1.2x_4 + 90x_7}{x_1 +x_2 +x_3 +x_4 +x_5 +x_6 +x_7} \leq 1.25
 ```
 \
+Les contraintes pour les autres composants se formulent de manière similaires.
+\
 Puisque ce problème implique de trouver la combinaison la moins coûteuse de matières premières qui rencontre la demande de 50 tonnes d’acier, la fonction objectif est simplement le coût des matières premières utilisées: 
 
 ```math
