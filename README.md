@@ -30,14 +30,26 @@ nous pourrions assigner une variable diﬀérente pour représenter la quantiter
 \
 Afin de modéliser les contraintes, observons tout d’abord que les variables dans ce cas sont naturellement bornées
 inférieurement par 0 (puisque des quantités négatives ne feraient pas de sens), et bornées supérieurement par leur
-quantité disponible, aussi avons-nous: \
+quantité disponible, aussi avons-nous: 
 ```math
-0 ≤x1 ≤40, \
-0 ≤x2 ≤30, \
-0 ≤x3 ≤60,
-0 ≤x4 ≤50,
-0 ≤x5 ≤20,
-0 ≤x6 ≤30,
+0 ≤x1 ≤40
+```
+```math
+0 ≤x2 ≤30
+```
+```math 
+0 ≤x3 ≤60
+```
+```math
+0 ≤x4 ≤50
+```
+```math
+0 ≤x5 ≤20
+```
+```math
+0 ≤x6 ≤30
+```
+```math
 0 ≤x7 ≤25.
 ```
 En supposant que n’importe quelle quantité d’une matière première 
