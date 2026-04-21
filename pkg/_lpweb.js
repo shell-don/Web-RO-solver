@@ -1,4 +1,4 @@
-/* @ts-self-types="./_lpweb.d.ts" */
+/* @ts-self-types="./pkg/_lpweb.d.ts" */
 
 /**
  * @param {number} nb_variables
