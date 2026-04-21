@@ -18,8 +18,8 @@ l’acier répondant aux besoins de l’armateur.
 | charbon | 90 | 0 | 0.002 | 0.01 | 25 | 165 |
 
 Puisque les fournisseur peut changer les quantités de matéries premières utilisées dans la producton de l’acier,
-nous pourrions assigner une variable diﬀérente pour représenter la quantiter de chaque matière première:
-— x1 = tonnes de limonite,
+nous pourrions assigner une variable diﬀérente pour représenter la quantiter de chaque matière première: \
+— x1 = tonnes de limonite, \
 — x2 = tonnes de taconite,
 — x3 = tonnes d’hématite,
 — x4 = tonnes de magnétite,
