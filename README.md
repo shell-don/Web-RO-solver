@@ -16,3 +16,25 @@ l’acier répondant aux besoins de l’armateur.
 | silicone 1 | 0 | 90 | 0.004 | 0.002 | 20 | 300 |
 | silicone 2 | 0 | 96 | 0.012 | 0.003 | 30 | 310 |
 | charbon | 90 | 0 | 0.002 | 0.01 | 25 | 165 |
+
+Puisque les fournisseur peut changer les quantités de matéries premières utilisées dans la producton de l’acier,
+nous pourrions assigner une variable diﬀérente pour représenter la quantiter de chaque matière première:
+— x1 = tonnes de limonite,
+— x2 = tonnes de taconite,
+— x3 = tonnes d’hématite,
+— x4 = tonnes de magnétite,
+— x5 = tonnes de silicone 1,
+— x6 = tonnes de silicone 2,
+— x7 = tonnes de charbon.
+Notons que les variables sont ici continues.
+Afin de modéliser les contraintes, observons tout d’abord que les variables dans ce cas sont naturellement bornées
+inférieurement par 0 (puisque des quantités négatives ne feraient pas de sens), et bornées supérieurement par leur
+quantité disponible, aussi avons-nous:
+0 ≤x1 ≤40,
+0 ≤x2 ≤30,
+0 ≤x3 ≤60,
+0 ≤x4 ≤50,
+0 ≤x5 ≤20,
+0 ≤x6 ≤30,
+0 ≤x7 ≤25.
+En supposant que n’importe quelle quantité d’une matière première 
