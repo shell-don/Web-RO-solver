@@ -54,4 +54,8 @@ quantité disponible, aussi avons-nous:
 0 ≤x7 ≤25.
 ```
 \
-En supposant que n’importe quelle quantité d’une matière première 
+En supposant que n’importe quelle quantité d’une matière première contribue pour la même quantité d’acier, et en
+sachant que nous devons produire au moins 50 tonnes, nous avons :
+```math
+\sum_{i=1}^7 x_i \geq 50
+```
