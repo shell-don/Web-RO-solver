@@ -1,6 +1,6 @@
 import init, {  gen_html_lineaire, gen_objective_constraints,
                 gen_objective_constraints_quadratique,
-                resoudre_basique, resoudre_quadratique } from "./_lpweb.js"
+                resoudre_basique, resoudre_quadratique } from "./lpweb.js"
 
 const getElement = id => document.getElementById(id);
 const parseVal = val => Number.parseFloat(val) || 0;
