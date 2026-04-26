@@ -1,5 +1,5 @@
-| # | Fonction objective | Contraintes |
-|:-:|:--|:--|
+| Fonctionnalités | Fonction objective | Contraintes |
+|:-:|:-:|:-:|
 | Linéaire | ✓ | ✓ |
 | Quadratique | ✓ | ⨉ |
 
