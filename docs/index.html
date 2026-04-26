@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS</title>
+    <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+
+    <h1>Recherche opérationnelle</h1>
+
+    <form>
+        <fieldset>
+            <legend>Mode</legend>
+            <input type="radio" id="mode_lineaire" name="mode" value="Lineaire">
+            <label for="mode_lineaire">Linéaire</label><br>
+            <input type="radio" id="mode_quadratique" name="mode" value="Quadratique">
+            <label for="mode_quadratique">Quadratique</label><br>
+        </fieldset>
+
+        <output id="mode_output"></output>
+        <br>
+        <output id="parametres_et_contraintes_output"></output>
+        <br>
+        <output id="resultat_output"></output>
+
+        <output id="coefficients_fonction_objective"></output>
+
+    </form>
+
+</body>
+</html>
