@@ -200,10 +200,6 @@ function __wbg_get_imports() {
             const ret = arg0.performance;
             return ret;
         },
-        __wbg_performance_5fc5a6563dcd33de: function(arg0) {
-            const ret = arg0.performance;
-            return ret;
-        },
         __wbg_static_accessor_GLOBAL_8cfadc87a297ca02: function() {
             const ret = typeof global === 'undefined' ? null : global;
             return isLikeNone(ret) ? 0 : addToExternrefTable0(ret);
