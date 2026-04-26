@@ -1,7 +1,7 @@
 | Fonctionnalités | Fonction objective | Contraintes | Dual | Solver |
 |:-:|:-:|:-:|:-:|--:|
-| Linéaire | ✓ | ✓ | ✓ | microlp |
-| Quadratique | ✓ | ⨉ | ⨉ | clarabel |
+| Linéaire | ✓ | ✓ | ✓ | [microlp](https://github.com/Specy/microlp/) |
+| Quadratique | ✓ | ⨉ | ⨉ | [clarabel](https://github.com/oxfordcontrol/Clarabel.rs) |
 
 ## Exemple
 ### Un problème de mélange
