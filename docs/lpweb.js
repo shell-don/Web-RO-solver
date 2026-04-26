@@ -232,7 +232,7 @@ function __wbg_get_imports() {
     };
     return {
         __proto__: null,
-        "./_lpweb_bg.js": import0,
+        "./lpweb_bg.js": import0,
     };
 }
 
