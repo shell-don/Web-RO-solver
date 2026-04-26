@@ -1,23 +1,7 @@
-<table>
-  <thead>
-    <tr>
-      <th>N°</th>
-      <th>Fonction objective</th>
-      <th>Contraintes</th>
-      <th>Solution</th>
-      <th>Valeur optimale</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="center"><b>1</b></td>
-      <td><code>x₁² + x₂²</code></td>
-      <td><code>x₁ + x₂ ≥ 1, xᵢ ≥ 0</code></td>
-      <td><code>x₁ = x₂ = 0.5</code></td>
-      <td align="center"><code>0.5</code></td>
-    </tr>
-  </tbody>
-</table>
+| # | Fonction objective | Contraintes |
+|:-:|:--|:--|
+| Linéaire | ✓ | ✓ |
+| Quadratique | ✓ | ⨉ |
 
 ## Exemple
 ### Un problème de mélange
