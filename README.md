@@ -1,3 +1,8 @@
+| Objectif / contraintes | linéaire | Quadratique |
+| linéaire | ✅ | ❌ |
+| Quadratique | ✅ | ❌  |
+
+## Exemple
 ### Un problème de mélange
 
 Un armateur doit construire un navire de guerre à partir de 50 tonnes
