@@ -1,7 +1,7 @@
-| Fonctionnalités | Fonction objective | Contraintes |
-|:-:|:-:|:-:|
-| Linéaire | ✓ | ✓ |
-| Quadratique | ✓ | ⨉ |
+| Fonctionnalités | Fonction objective | Contraintes | Dual |
+|:-:|:-:|:-:|:-:|
+| Linéaire | ✓ | ✓ | ✓ |
+| Quadratique | ✓ | ⨉ | ⨉ |
 
 ## Exemple
 ### Un problème de mélange
