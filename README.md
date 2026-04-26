@@ -1,4 +1,5 @@
 | Objectif / contraintes | linéaire | Quadratique |
+|-|-|-|
 | linéaire | ✅ | ❌ |
 | Quadratique | ✅ | ❌  |
 
