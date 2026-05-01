@@ -94,7 +94,6 @@ coût = 200x_1 + 250x_2 + 150x_3 + 220x_4 + 300x_5 + 310x_6 + 165x_7
 Après la simplification de toutes les contraintes de composition de cette manière, et en utilisant mon
 logiciel d’optimisation, nous obtenons la solution 
 \
-<img width="1186" height="878" alt="Capture d’écran 2026-04-21 à 11 13 38" src="https://github.com/user-attachments/assets/318b0666-8ee8-4941-be7d-3b18ba08cbd5" />
 
 cela se traduit en exactement 50 tonnes d’acier, produit à partir de 13.788779 tonnes de limonite, 35.809736 tonnes
 d’hématite, 0.166667 tonnes de silicone 1 et 0.234818 tonnes de charbon. Le coût total de production pour cette
