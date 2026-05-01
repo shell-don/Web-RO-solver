@@ -1,0 +1,296 @@
+:root {
+  --bg:           #fffffd;
+  --bg-subtle:    #f7f7f7;
+  --border:       #e0e0e0;
+  --border-strong:#999999;
+  --text:         #111111;
+  --text-muted:   #666666;
+  --radius:       1.217em;
+  --font-sans:    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    ui-monospace, 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+br   { display: none; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+header h1 {
+  font-family: var(--font-mono);
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.9em 1em;
+  border-bottom: 2px solid var(--text);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+form {
+  padding: 0.875em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  max-width: 58em;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.875em 1em;
+  background: var(--bg);
+  gap: 0.625em;
+}
+
+fieldset fieldset {
+  border-color: var(--border);
+  padding: 0.75em 0.875em;
+}
+
+legend {
+  font-family: var(--font-mono);
+  font-size: 0.8em;
+  font-weight: 555;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 0 0.4em;
+}
+
+label {
+  font-size: 1em;
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+input[type="number"] {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  width: 5em;
+  padding: 0.3em 0.4em;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-subtle);
+  color: var(--text);
+  text-align: center;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin-right: 0.35em;
+  margin-bottom: 0.35em;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { opacity: 0.25; }
+
+input[type="number"]:focus {
+  outline: none;
+  border-color: var(--text);
+  background: var(--bg);
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
+}
+
+input[type="number"]::placeholder {
+  color: #bbb;
+  font-size: 0.75em;
+  font-family: var(--font-sans);
+}
+
+select {
+  font-family: var(--font-sans);
+  font-size: 0.85em;
+  padding: 0.32em 0.5em;
+  border: 0.5px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--bg-subtle);
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 0.1s;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--text);
+  background: var(--bg);
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.05);
+}
+
+.select_flex {
+  display: flex;
+}
+
+#exemples {
+  width: 16em;
+  margin-left: auto;
+}
+
+input[type="radio"] {
+  accent-color: var(--text);
+  width: 0.85em;
+  height: 0.85em;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.radio_flex {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.radio_block {
+  display: block;
+  align-items: center;
+}
+
+fieldset:first-of-type label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  margin-right: 0.5em;
+  margin-left: 0.5em ;
+  cursor: pointer;
+  font-size: 0.85em;
+  color: var(--text);
+}
+
+button[type="button"] {
+  font-family: var(--font-mono);
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border-radius: var(--radius);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, color 0.1s;
+  border: 1px solid var(--text);
+  background: var(--bg);
+  color: var(--text);
+  margin-right: 0.5em;
+  margin-left: 0.5em ;
+  margin-top: 0.8em;
+}
+
+button[type="button"]:hover  { background: var(--text); color: var(--bg); }
+button[type="button"]:active { opacity: 0.8; }
+
+.bouton_block {
+  display: block;
+  text-align: center;
+}
+
+span {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* Ligne équation : flex horizontal */
+#parametres_et_contraintes_output fieldset > div,
+#parametres_et_contraintes_output fieldset fieldset > div {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  flex-wrap: wrap;
+  padding: 0.4em 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+#parametres_et_contraintes_output fieldset > div:last-child,
+#parametres_et_contraintes_output fieldset fieldset > div:last-child {
+  border-bottom: none;
+}
+
+/* Inputs dans les équations : inline */
+#parametres_et_contraintes_output input[type="number"] {
+  display: inline-block;
+  width: 4.5em;
+  padding: 0.25em 0.35em;
+}
+
+
+
+/* Select signe contrainte : inline */
+#parametres_et_contraintes_output select {
+  display: inline-block;
+  width: 3.5em;
+  padding: 0.25em 0.2em;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+}
+
+/* Label (c_j) : inline discret */
+#parametres_et_contraintes_output label {
+  display: inline;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--border-strong);
+  margin-left: 0.3em;
+}
+
+/* Boutons résoudre/dual */
+#parametres_et_contraintes_output > fieldset > button {
+  margin-top: 0.8em;
+}
+
+/*    OUTPUT résultat   */
+output { display: block; }
+
+output#resultat_output {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  line-height: 1.9;
+  padding: 0.875em 1em;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--text);
+  border-radius: var(--radius);
+  white-space: pre-wrap;
+}
+
+output#resultat_output:empty { display: none; }
+
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 0.1em; height: 0.1em; }
+::-webkit-scrollbar-track { background: var(--bg-subtle); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 1em; }
+
+/* ============================================================
+   Tablette >= 38em
+   ============================================================ */
+@media (min-width: 38em) {
+  form     { padding: 1.1em; gap: 0.875em; }
+  fieldset { padding: 0.875em 1.1em; }
+  #exemples { width: 20em; }
+}
+
+/* ============================================================
+   Desktop >= 54em
+   ============================================================ */
+@media (min-width: 54em) {
+  h1   { padding: 0.9em 1.5em; }
+  form { padding: 1.25em 1.5em; gap: 1em; }
+  fieldset { padding: 1em 1.25em; }
+}
+
+@media (max-width: 600px) {
+  .radio_flex {
+    flex-direction: column;
+    align-items: flex-start; /* aligne à gauche */
+  }
+}

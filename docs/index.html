@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROS</title>
+    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Recherche opérationnelle</h1>
+    </header>
+
+    <form>
+        <fieldset>
+            <legend>Mode</legend>
+            <div class="select_flex">
+                <div class="radio_flex">
+                    <label for="mode_lineaire">
+                        <input type="radio" id="mode_lineaire" name="mode" value="Lineaire">
+                        Linéaire
+                    </label>
+                    <label for="mode_quadratique">
+                        <input type="radio" id="mode_quadratique" name="mode" value="Quadratique">
+                        Quadratique
+                    </label>
+                </div>
+                <select id="exemples">
+                    <option value="">Choisir un exemple</option>
+                    <optgroup label="Linéaire">
+                        <option value="melange">Un problème de mélange</option>
+                        <option value="glass">Wyndor Glass</option>
+                        <option value="horaires">Horaire de personnel</option>
+                        <option value="reseau">Réseau de distribution</option>
+                        <option value="production">Production</option>
+                        <option value="californiamfg">California Mfg</option>
+                    </optgroup>
+                    <optgroup label="Quadratique">
+                        <option value="qp_norme">min x² + y²</option>
+                    </optgroup>
+                </select>
+            </div>
+        </fieldset>
+
+        <output id="mode_output"></output>
+    
+        <output id="parametres_et_contraintes_output"></output>
+
+        <output id="resultat_output"></output>
+
+        <output id="coefficients_fonction_objective"></output>
+
+    </form>
+
+</body>
+</html>
